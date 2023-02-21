@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 import { NativeBaseProvider, Text, Box } from "native-base";
 import { Home } from './screens/home/Home';
-import Navigation from './Navigation';
+// import Navigation from './Navigation';
 
 export default function App() {
   return (
