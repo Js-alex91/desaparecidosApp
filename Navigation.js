@@ -29,7 +29,9 @@ const About = () => {
 
 const MyTabs = () => {
   return(
-    <Tab.Navigator>
+    <Tab.Navigator
+      initialRouteName="Home"
+    >
       <Tab.Screen
         name="Add Missing"
         component={Addmissing}

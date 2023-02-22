@@ -24,7 +24,7 @@ export const Header = () => {
                 >1</Text>
             </Box>
             <Box >
-            <Ionicons name="md-contact" size={32} color="green" />
+            {/* <Ionicons name="md-contact" size={32} color="green" /> */}
             </Box>
         </Box>
 
