@@ -1,12 +1,19 @@
 import { StyleSheet } from 'react-native';
-import { NativeBaseProvider, Text, Box } from "native-base";
+import { NativeBaseProvider, extendTheme } from "native-base";
 import { Home } from './screens/home/Home';
 import Navigation from './Navigation';
 
 
 export default function App() {
+
+  const theme = extendTheme({
+    colors: {
+      primary: "#ec2e53",
+    }
+  });
+
   return (
-    <NativeBaseProvider>
+    <NativeBaseProvider theme={theme}>
       <Navigation />
       {/* <Home /> */}
     </NativeBaseProvider>

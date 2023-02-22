@@ -37,7 +37,7 @@ const data = [{
 export const MissingList = () => {
   return (
     <Box mt='40px'>
-      <Heading fontSize="xl" p="4" pb="3" textAlign='center' color='#ec2e53'>
+      <Heading fontSize="xl" p="4" pb="3" textAlign='center' color='primary'>
         Lista de Desaparecidos
       </Heading>
 
@@ -63,7 +63,7 @@ export const MissingList = () => {
 
                 <Button
                   mt="4"
-                  backgroundColor='#ec2e53'
+                  bg="primary"
                 >
                   <Text color='#fff'>Más información</Text>
                 </Button>

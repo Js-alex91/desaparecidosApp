@@ -1,12 +1,19 @@
 import React from "react";
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import { Home } from "./screens/home/Home";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { Text } from "native-base";
 
-const Tab = createBottomTabNavigator()
+const MyTheme = {
+  ...DefaultTheme,
+  colors: {
+    ...DefaultTheme.colors,
+    primary: '#ec2e53',
+  },
+};
 
+const Tab = createBottomTabNavigator()
 
 const Addmissing = () => {
   return(
@@ -26,11 +33,12 @@ const MyTabs = () => {
       <Tab.Screen
         name="Add Missing"
         component={Addmissing}
+        activeColor="primary"
         options={{
           headerShown: false,
           tabBarLabel: 'Reportar Desaparecido',
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="account-plus" size={24} color="black" />
+            <MaterialCommunityIcons name="account-plus" size={24} color={color} />
           ),
         }}  
       />
@@ -38,6 +46,7 @@ const MyTabs = () => {
       <Tab.Screen
         name="Home"
         component={Home}
+        activeColor="primary"
         options={{
           headerShown: false,
           tabBarLabel: 'Inicio',
@@ -50,11 +59,12 @@ const MyTabs = () => {
       <Tab.Screen
         name="About"
         component={About}
+        activeColor="primary"
         options={{
           headerShown: false,
           tabBarLabel: 'Sobre Nosotros',
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="information" size={24} color="black" />
+            <MaterialCommunityIcons name="information" size={24} color={color} />
           ),
         }}
       />
@@ -66,7 +76,7 @@ const MyTabs = () => {
 
 const Navigation = () => {
   return (
-    <NavigationContainer>
+    <NavigationContainer theme={MyTheme}>
       <MyTabs />
     </NavigationContainer>
   )

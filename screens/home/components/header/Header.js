@@ -5,12 +5,13 @@ import Search from '../search/Search';
 
 export const Header = () => {
   return (
-    <Box style={{
+    <Box 
+        bg="primary"
+        style={{
         padding: 20,
         height: 250,
         borderBottomStartRadius: 80,
         borderBottomEndRadius: 80,
-        backgroundColor: '#ec2e53'
     }}>
         <Box style={{
             flexDirection: 'row',

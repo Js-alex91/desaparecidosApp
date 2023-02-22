@@ -21,7 +21,10 @@ const Search = () => {
             paddingHorizontal: 10,
         }}>
             <Box>
-            <Ionicons name="search" size={32} color="#ec2e53" />
+                <Ionicons
+                    name="search"
+                    size={32}
+                    color="primary" />
             </Box>
 
             <Box w='80%' maxW="250px" >
