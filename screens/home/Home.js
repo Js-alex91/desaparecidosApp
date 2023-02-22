@@ -1,15 +1,18 @@
 import React from 'react'
-import { Box, Text } from 'native-base'
+import { Box, ScrollView, Text } from 'native-base'
 import { Header } from './components/header/Header'
+import { MissingList } from './components/missingList/MissingList'
 
 export const Home = () => {
   return (
-    <Box style={{flex: 1, backgroundColor: '#000'}}>
+    <ScrollView>
+      <Box style={{flex: 1, backgroundColor: '#000'}}>
         <Header />
 
-        
+        <MissingList />  
 
 
-    </Box>
+      </Box>
+    </ScrollView>
   )
 }

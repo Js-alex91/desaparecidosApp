@@ -6,7 +6,7 @@ import { Home } from './screens/home/Home';
 export default function App() {
   return (
     <NativeBaseProvider>
-      <Navigation/>
+      {/* <Navigation/> */}
       <Home />
     </NativeBaseProvider>
   );
