@@ -9,8 +9,7 @@ export const Home = () => {
       <Box style={{flex: 1, backgroundColor: '#000'}}>
         <Header />
 
-        <MissingList />  
-
+        <MissingList />
 
       </Box>
     </ScrollView>
